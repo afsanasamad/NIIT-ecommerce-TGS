@@ -1,13 +1,17 @@
 package config;
+import javax.servlet.Filter;
+
+import org.springframework.web.filter.DelegatingFilterProxy;
 import org.springframework.web.servlet.support.AbstractAnnotationConfigDispatcherServletInitializer;
-import config.WebFlowConfig;
+
 public class WebAppInitializer extends AbstractAnnotationConfigDispatcherServletInitializer {
+	 
 	 
     @Override
     protected Class<?>[] getRootConfigClasses() {
         return new Class[] { WebConfig.class, WebFlowConfig.class };
     }
-  
+    
     @Override
     protected Class<?>[] getServletConfigClasses() {
         return null;
@@ -17,6 +21,10 @@ public class WebAppInitializer extends AbstractAnnotationConfigDispatcherServlet
     protected String[] getServletMappings() {
         return new String[] { "/" };
     }
+    
+    //@Override
+   // protected Filter[] getServletFilters() {
+      //  return new Filter[] { new DelegatingFilterProxy("springSecurityFilterChain") };
+    //}
  
 }
-

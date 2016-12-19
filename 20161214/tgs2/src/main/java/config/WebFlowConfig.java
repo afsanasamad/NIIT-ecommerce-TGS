@@ -1,7 +1,5 @@
 package config;
 
-
-
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
@@ -9,6 +7,7 @@ import org.springframework.webflow.config.AbstractFlowConfiguration;
 import org.springframework.webflow.definition.registry.FlowDefinitionRegistry;
 import org.springframework.webflow.executor.FlowExecutor;
 import org.springframework.webflow.mvc.servlet.FlowHandlerAdapter;
+
 import org.springframework.webflow.mvc.servlet.FlowHandlerMapping;
 
 @Configuration

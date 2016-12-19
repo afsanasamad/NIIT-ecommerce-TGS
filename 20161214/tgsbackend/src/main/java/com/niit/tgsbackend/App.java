@@ -20,30 +20,35 @@ public class App
     public static void main( String[] args )
     {
         AbstractApplicationContext context=new AnnotationConfigApplicationContext(AppContext.class);
+     // UserDAO userDAO=(UserDAO)context.getBean("userDAO");
         ProductDAO productDAO=(ProductDAO)context.getBean("productDAO");
+        
+        //register new user
+        
+      /*  User user=new User();
+        user.setName("John");
+        user.setUsername("john");
+        user.setPassword("password@123");
+        user.setMobile("9830098300");
+        
+        userDAO.addUser(user);*/
+        
+        
+        //add a product
+        
         Product product=new Product();
-        product.setName("GoogleGlasses");
+        product.setProductName("Google Glasses");
         product.setBrand("Google");
-        product.setCategory("Miscelleneous");
-        product.setDesc("Intelligent and blah blah blah.");        
+        product.setPrice(70000);
+        product.setCategory("Miscellaneous");
+        product.setDesc("Blah Blah");
+        
         productDAO.addProduct(product);
+        
         for(Product p:productDAO.listProducts())
         {
-        	System.out.println(p.getId());
-        	System.out.println(p.getName());
-        }
-        UserDAO userDAO=(UserDAO)context.getBean("userDAO");
-        User user=new User();
-        user.setName("Hillary Trump");
-        user.setPincode("682025");
-        user.setCity("Cochin");
-        user.setAddress("No 25, Rose Villa, MG Road"); 
-		user.setPassword("password"); 
-        userDAO.addUser(user);
-        for(User u:userDAO.listUsers())
-        {
-        	System.out.println(u.getId());
-        	System.out.println(u.getName());
+        	System.out.println(p.getProductName());
+        	System.out.println(p.getProductId());
         }
         
     }

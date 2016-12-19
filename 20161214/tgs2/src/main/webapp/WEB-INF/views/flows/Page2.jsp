@@ -8,7 +8,7 @@
 </head>
 <body>
 Page 2
-
+payment details
 <a href="${flowExecutionUrl}&_eventId=event2">Next Page</a>
 </body>
 </html>
