@@ -26,12 +26,30 @@ public class HomeController {
 	{
 		return "index";
 	}
+	@RequestMapping("/home")
+	public String home()
+	{
+		return "index";
+	}
 
 	@RequestMapping("/login")
 	public String loginPage()
 	{
 		return "login";
 	}
+
+//	@RequestMapping("/products")
+//	public String productsPage()
+//	{
+//		return "products";
+//	}
+//	@RequestMapping(value = "/admin", method = RequestMethod.GET)
+//	public String Admin(Model model) {
+//		model.addAttribute("product", new Product());
+//		model.addAttribute("listproducts", productDAO.listProducts());
+//		return "admin";
+//
+//	}
 	
 //	@RequestMapping("/admin")
 //	public String adminPage()

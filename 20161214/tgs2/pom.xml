@@ -70,11 +70,7 @@
       <scope>test</scope>
     </dependency>
     
-  <!--   <dependency>
- 		<groupId>com.niit.internal</groupId>
-  		<artifactId>furnitureinternalback</artifactId>
- 		<version>0.0.1-SNAPSHOT</version>
-  </dependency>-->
+
    <dependency>
             <groupId>javax.servlet</groupId>
             <artifactId>javax.servlet-api</artifactId>
