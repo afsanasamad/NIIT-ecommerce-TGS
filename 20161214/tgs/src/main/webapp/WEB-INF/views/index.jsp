@@ -57,32 +57,8 @@ $(document).ready(function()
 </head>
 <!---------------------------------------------------body-------------------------------------------------------------------------------------------------->
 <body id="myPage" data-spy="scroll" data-target=".navbar">
-<div  class="se-pre-con"></div><!---for preloader-->
-<!-------------------------------------------Navbar----------------------------------------------------->
-<nav class="navbar navbar-inverse navbar-fixed-top">
-  <div class="container">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-     <a class="navbar-brand" href="#myPage"><span class="glyphicon glyphicon-equalizer" aria-hidden="true"> TGS</span></a>
-    </div>
-    <div class="collapse navbar-collapse" id="myNavbar">
-      <ul  class="nav navbar-nav">
-        <li><a href="#aboutus">About Us</a></li>
-        <li><a href="#home">Home</a></li>
-        <li><a href="products">Products</a></li>
-        <li><a href="#new">New Arrivals</a></li>
-       </ul>
-	    <ul class="nav navbar-nav navbar-right">
-        <li><a href="#login">Login</a></li>
-        <li><a href="#register">Register</a></li>
-      </ul>
-    </div>
-  </div>
-</nav>
+<%@ include file="templates\header.jsp"%>
+
 <!----------------------------------Background Title--------------------------------------------------------->
 <div class="bg"></div>
 <div class="jumbotron">
@@ -97,12 +73,12 @@ $(document).ready(function()
 <br>
 <br>
 <h1>The Gadget Shop</h1>
-<p class="lead">+ The Internet Super Store for Gadgets</p>
+<p class="lead">+ The Internet Super Store for Gadgets hshss</p>
 <button class="btn btn-xl btn-outline mb1 white" style="background-color:transparent" id="page-scroll">Jump to Store!</button>
 </div>
 <!-------------------------------------------New Arrivals (Carousel)--------------------------------------------------------->
 
-
+<div class="content">
 <div id="new" class="row bg-black">
     <div class="col-sm-12 col-md-6">	
       <h2>Check Out What's New!<br></h2>
@@ -269,61 +245,10 @@ With the advancements in the field of technology the list of gadgets available h
    </div>
  
  </div>
+</div>
+	<%@ include file="templates\footer.jsp"%>
 
-<!---------------------------footer------------------------------------------------------------------>
-	
-        <small><footer class="footer-distributed bg-black">
-<hr>
-			<div class="footer-left">
-
-				<h3><span class="glyphicon glyphicon-equalizer" aria-hidden="true" style="color:white"> TGS</span></h3>
-
-				<p class="footer-links">
-   				<a href="#">Contact Us</a>
-					·
-					<a href="#">Sell With Us</a>
-					·
-					<a href="#">FAQ</a>
-					·
-					<a href="#">Careers</a>
-					
-				</p>
-
-				<p class="footer-company-name">The Gadget Shop &copy; 2017</p>
-			</div>
-
-			<div class="footer-center">
-
-				<div>
-					<i class="fa fa-map-marker"></i>
-					<p><span>21 Cross Road, Koramangala</span> Bangalore, India</p>
-				</div>
-
-				<div>
-					<i class="fa fa-phone"></i>
-					<p>+91 961104650</p>
-				</div>
-
-				<div>
-					<i class="fa fa-envelope"></i>
-					<p><a href="mailto:support@company.com" style="color:white">support@thegadgetshop.com</a></p>
-				</div>
-
-			</div>
-
-			<div class="footer-right">
-
-				<div class="footer-icons">
-
-					<a href="#"><i class="fa fa-facebook"></i></a>
-					<a href="#"><i class="fa fa-twitter"></i></a>
-					<a href="#"><i class="fa fa-linkedin"></i></a>
-					<a href="#"><i class="fa fa-github"></i></a>
-
-				</div>
-
-			</div>
-    </footer><small>
+       
   
 </body>
 
